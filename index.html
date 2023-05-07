@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
-    <script src="/script.js"></script>
+    <script type="text/javascript" src="/script.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -15,10 +15,23 @@
         <!-- div para agrupar os itens do header -->
         <div name="cabecalho-master" class="box-master-cabecalho">
             <!-- div para agrupar os items do menu -->
-            <div name="menu-itens" class="box-menu-itens-cabecalho">  
-                <a name="item-menu-contato" class="item-contato">contato</a>
-                <a name="item-menu-minhapagina" class="item-minhapagina">Minha página</a>
-                <a name="item-menu-fotos" class="item-fotos">fotos</a>
+            <div name="menu-itens" class="box-menu-itens-cabecalho">
+                <!-- <select id="sl-menu-contato" onclick="SelecionaOP()" onpointerover="SelecionaOP2()" onpointerleave="SelecionaOP3()">
+                    <a href="#"><option value="contato" class="op-teste" onclick="SeleciondlBoder()">contato</option></a>
+                    <option value="facebook" class="op-teste"><a href="https://www.facebook.com/lucasdesouzavaz/">facebook</a></option>
+                    <a><option value="instagram" class="op-teste">instagram</option></a>
+                </select> -->
+                <button name="item-menu-contato" class="item-contato" onmousedown="opClickOn()" onclick="onMousehover()" >contato</button>
+                    <div id="div-contato-interno" name="itens-menu-contato-dentro" class="itens-contato-dentro">
+                        <ul name="ls-itens-menu-contato">
+                            <a href="https://www.facebook.com/lucasdesouzavaz/" onclick="onMouseNothover()"><li id="itens-menu-contato-interno" value="facebook" class="item-interno-menu-contato-face" >facebook</li></a>
+                            <li id="itens-menu-contato-interno2" value="instagram"class="item-interno-menu-contato-insta" >instagram</li>
+                        </ul>
+                    </div>
+                <button name="item-menu-minhapagina" class="item-minhapagina" onclick="onMouseNothover()">fotos</button>
+                <!-- <a name="item-menu-contato" class="item-contato">contato</a>
+                <a >Minha página</a>
+                <a name="item-menu-fotos" class="item-fotos">fotos</a> -->
             </div>
             <!-- div div para agrupar os botões -->
             <div name="botoes-menu" class="box-menu-botoes">
@@ -31,7 +44,18 @@
     </header>
     <!-- semantica do corpo -->
     <main>
+        <p id="p1">Ullamco culpa esse anim sit. Et nostrud aliquip elit eu mollit consequat eu minim ut nisi. Aliquip deserunt nulla magna ex laborum est dolor in mollit consequat laboris est. Ipsum ullamco quis cillum quis ex qui ipsum esse.</p>
+        <!-- <script>
+            // função de deixar o select transparente
+function mouseDown(){
+    document.getElementById("p1").style.color = "blue";
+}
 
+// função de deixar em outra cor
+function mouseUp(){
+    document.getElementById("p1").style.color = "red";
+}
+        </script> -->
     </main>
     <!-- semantica do rodapé -->
     <footer>

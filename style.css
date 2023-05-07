@@ -1,4 +1,8 @@
 /* css da página */
+/* controle do body */
+body{
+    background-color: #c5c0c06e;
+}
 
 /* controle do box de fora */
 .box-master-cabecalho{
@@ -32,12 +36,19 @@
 }
 
 /* controle dos links que uso como menu */
-a{
+.item-contato, .item-minhapagina{
     font-size: 20px;
     text-decoration: none;
     margin-left: 60px;
-    padding-top: 20px;
+    /* padding-top: 20px; */
+    background-color: transparent;
+    border-style: none;
 }
+
+a{
+    text-decoration: none;
+}
+
 
 /* controle dos botões "natural" */
 .bt-entrar, .bt-fazercadastro{
@@ -57,3 +68,7 @@ a{
     border-color: red;
     background-color: #d80505f3;
 } 
+
+.itens-contato-dentro{
+    position: absolute;
+}
