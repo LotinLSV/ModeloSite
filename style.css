@@ -1,1 +1,59 @@
 /* css da página */
+
+/* controle do box de fora */
+.box-master-cabecalho{
+    border-style: groove;
+    border-radius: 10px;
+    border-color: black;
+    box-shadow: 2px;
+    width: 100%;
+    height: 40px;
+    display: flex;
+}
+
+/* controle do box dos itens do menu */
+.box-menu-itens-cabecalho{
+    margin-top: 7.5px;
+    /* border-style: groove;
+    border-color: blue; */
+    width: 600px;
+    height: 35px;
+    margin-left: 200px;
+    /* display: flex; */
+}
+
+/* controle do box dos botões */
+.box-menu-botoes{
+    /* border-style: groove;
+     border-color: red; */
+    width: 300px;
+    height: 35px;
+    margin-left: 800px;
+}
+
+/* controle dos links que uso como menu */
+a{
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: 60px;
+    padding-top: 20px;
+}
+
+/* controle dos botões "natural" */
+.bt-entrar, .bt-fazercadastro{
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 7.5px;
+    margin-left: 30px;
+    border-radius: 50px;
+    border-style: groove;
+    border-color: blue;
+    background-color: #054977;
+    color: #ffffff;
+    font-style: bold;
+}
+
+/* controle dos botões quando se passa o mouse em cima deles */
+.bt-entrar:hover, .bt-fazercadastro:hover{
+    border-color: red;
+    background-color: #d80505f3;
+} 
