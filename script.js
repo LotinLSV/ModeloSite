@@ -1,0 +1,1 @@
+// este é o arquivo js para que irá conter todas as funcionalidades do site
